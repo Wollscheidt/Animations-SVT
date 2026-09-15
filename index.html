@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations interactives de SVT</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f7f6;
+            color: #24332d;
+        }
+
+        header {
+            background: #2e6f5e;
+            color: white;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #2e6f5e;
+        }
+
+        .animations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .carte {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+
+        .carte h3 {
+            margin-top: 0;
+        }
+
+        .bouton {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 11px 18px;
+            background: #2e6f5e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .bouton:hover {
+            background: #24594c;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Animations interactives de SVT</h1>
+    <p>Ressources pédagogiques interactives</p>
+</header>
+
+<main>
+
+    <h2>Division cellulaire et génétique</h2>
+
+    <div class="animations">
+
+        <div class="carte">
+            <h3>La méiose</h3>
+            <p>Animation interactive consacrée au déroulement de la méiose.</p>
+            <a class="bouton" href="meiose/">Ouvrir l'animation</a>
+        </div>
+
+        <div class="carte">
+            <h3>Mitose VS Méiose</h3>
+            <p>Animation permettant de comparer la mitose et la méiose.</p>
+            <a class="bouton" href="mitose-vs-meiose/">Ouvrir l'animation</a>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    Animations pédagogiques de SVT
+</footer>
+
+</body>
+</html>
