@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mitose VS Méiose</title>
+
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        #animation {
+            width: 900px;
+            height: 650px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="animation"></div>
+
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+
+    window.addEventListener("load", () => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+
+        document.getElementById("animation").appendChild(player);
+
+        player.load("La_mitose_VS_meiose.swf");
+    });
+</script>
+
+</body>
+</html>
